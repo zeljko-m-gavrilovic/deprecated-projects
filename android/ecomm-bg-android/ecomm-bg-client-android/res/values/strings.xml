@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application setting -->
+    <string name="app_name">Контакт центар</string>
+    <string name="app_theme">@android:style/Theme.Black</string>
+    <string name="version">v1.4</string>
+    <string name="server_url">http://effectacalls.dyndns.org:8080/spf/</string>
+    <!--
+    <string name="server_url">http://effectacalls.dyndns.org:8070/spf/</string>
+    <string name="server_url">http://95.180.23.50:8081/ecomm/</string> 
+    -->
+    <!-- Registration Activity -->
+
+    <string name="registrationMessage">Добро дошли у Ecomm апликацију!
+        Молимо Вас да попуните податке испод и кликнете на дугме \'Регистрација\'.</string>
+    <string name="name">Име</string>
+    <string name="surname">Презиме</string>
+    <string name="phoneNumber">Број телефона (+381123456 или 063123456)</string>
+    <string name="registration">Регистрација</string>
+    <string name="name_mandatory">Поље Име мора бити попуњено!</string>
+    <string name="surname_mandatory">Поље Презиме мора бити попуњено!</string>
+    <string name="phone_number_mandatory">Поље Број телефона мора бити попуњено!</string>
+    <string name="phone_number_not_valid">Поље Број телефона није валидно!</string>
+    <string name="registering_user">Регистрација корисника на сервер...</string>
+    <string name="no_properties_file">Проблеми при учитавању датотеке са подешавањима...</string>
+
+    <!-- Main Activity -->
+
+    <string name="photo">Фотографија</string>
+    <string name="comment">Коментар</string>
+    <string name="uploadData">Пошаљи податке</string>
+    <string name="takePhoto">Усликај</string>
+    <string name="removePhoto">Обриши фотографију</string>
+    <string name="exception_reading_image_file">Грешка при читању датотеке са фотографијом.</string>
+    <string name="comment_mandatory">Поље Коментар не сме да буде празно!</string>
+    <string name="gps_setting">ГПС сензор је тренутно искључен. Да ли желите да га укључите?</string>
+    <string name="uploading_data">Слање података на сервер...</string>
+
+    <!-- Common labels -->
+
+    <string name="yes">Да</string>
+    <string name="no">Не</string>
+    <string name="cancel">Одустани</string>
+    <string name="ok_ok">ОК</string>
+
+    <!-- Server response messages -->
+
+    <string name="httpt_response_minus_one">Грешка везана за конекцију. Апликација не може да се повеже на сервер</string>
+    <string name="exception_in_communication">Грешка у комуникацији са сервером</string>
+    <string name="error_in_communication">Грешка у комуникацији са сервером. Код одговора: </string>
+    <string name="registration.error.emptyFields">Регистрација није успела. Сва поља морају бити попуњена!</string>
+    <string name="registration.successfull">Успешно сте се регистровали!
+        \nХвала Вам што корисите Ecomm апликацију!</string>
+    <string name="server.not.working">Апликација не може да се повеже са сервером </string>
+    <string name="connector.on.pause">Сервер је тренутно недоступан за примање података. Молимо Вас покушајте поново мало касније...</string>
+    <string name="request.is.missing.authenication.data">Корисник није послао одговарајуће податке ѕа аутентификацију!</string>
+    <string name="user.with.such.phone.not.registered">Не постоји корисник са таквим подацима!</string>
+    <string name="forbiden.access.to.server">Приступ серверу Вам је забрањен!</string>
+    <string name="authentication.failed">Аутентификација неуспешна, послати подаци не одговарају очекиваним!</string>
+    <string name="authentication.failed.upload.key">Аутентификација неуспешна, ваш јединствени кључ не одгова очекиваним вредностима!</string>
+    <string name="max.number.of.uplods.per.day.exceeded">Подаци нису послати. Максимални број порука који можете послати на дан је искоришћен!</string>
+    <string name="successfully.uploaded.data">Подаци су успешно послати</string>
+    <string name="error_uploading_data">Подаци нису послати.</string>
+
+    <!-- Opštine -->
+    <string name="select_city">Изабери општину</string>
+
+    <string-array name="cities">
+        <item>Аранђеловац</item>
+        <item>Нови Београд</item>
+        <item>Палилула</item>
+        <item>Стара Пазова</item>
+    </string-array>
+
+    <string name="default_city">Нови Београд</string>
+
+</resources>

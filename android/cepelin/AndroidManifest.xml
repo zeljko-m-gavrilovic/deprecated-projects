@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.yc.cepelin"
+      android:versionCode="1"
+      android:versionName="1.0">
+      
+   	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> 
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> 
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+	<uses-permission android:name="android.permission.INTERNET" />
+   	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-feature android:name="android.hardware.camera" />	
+    
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
+    
+    	<uses-library android:name="com.google.android.maps" />
+    
+    	<activity android:name=".SplashScreenActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".MainTabActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".CafeListActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>            
+        </activity>        
+        
+        <activity android:name=".RestaurantListActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>        
+
+        <activity android:name=".EventListActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>        
+
+        <activity android:name=".ItemTabActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>        
+
+        <activity android:name=".InfoActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>        
+        
+        <activity android:name=".CommentsActivity" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>        
+        
+		<activity android:name=".GalleryActivity"
+			android:label="@string/app_name"
+			android:configChanges="orientation"
+			android:screenOrientation="sensor">
+		</activity>
+
+		<activity android:name=".CameraPreview"
+			android:label="@string/app_name"
+			android:configChanges="orientation"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="landscape">
+		</activity>
+        
+		<activity android:name=".ShowPoiOnMapActivity" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+			</intent-filter>
+		</activity>
+		<activity android:name=".AllOnMapActivity"/>
+
+	</application>
+    <uses-sdk android:minSdkVersion="3" />
+
+</manifest> 

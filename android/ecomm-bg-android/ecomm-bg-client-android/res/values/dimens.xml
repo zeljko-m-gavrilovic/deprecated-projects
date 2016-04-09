@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="big_text">30dip</dimen>
+    <dimen name="separator_height">1px</dimen>
+    <dimen name="text_header">14dip</dimen>
+    <dimen name="text_label">14dip</dimen>
+    <dimen name="text_edittext">14dip</dimen>
+    <dimen name="text_button">14dip</dimen>
+    <dimen name="common_margins">5dip</dimen>
+    <dimen name="label_margin_left">15dip</dimen>
+    <dimen name="button_width">200dip</dimen>
+    <dimen name="photo_max_width">50dip</dimen>
+    <dimen name="photo_max_height">50dip</dimen>
+    <dimen name="header_margin_top">10dip</dimen>
+    <dimen name="header_margin_bottom">10dip</dimen>
+    <dimen name="button_margin_bottom">10dip</dimen>
+    <dimen name="button_margin_top">10dip</dimen>
+    <dimen name="edittext_margin_bottom">5dip</dimen>
+    <dimen name="photo_margins">10dip</dimen>
+    
+</resources>

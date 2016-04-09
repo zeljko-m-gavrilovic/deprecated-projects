@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    android:padding="6dip">
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dip"
+        android:text="@string/name"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:background="@android:drawable/editbox_background"
+        android:textSize="14dip"
+        android:layout_below="@id/nameLabel"/>
+                
+    <Button
+        android:id="@+id/closeItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:text="@string/close" />
+    <Button
+        android:id="@+id/saveItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/closeItemButton"
+        android:layout_alignTop="@id/closeItemButton"
+        android:text="@string/save" />
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/cameraButtons"
+		android:layout_width="wrap_content"
+		android:layout_height="55px"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		>
+
+	<Button
+		android:id="@+id/cameraRotate"
+		android:layout_width="80px"
+		android:layout_height="50px"
+		android:text="@string/camera_layout_rotate"
+		/>
+
+	<Button
+		android:id="@+id/cameraSend"
+		android:layout_width="80px"
+		android:layout_height="50px"
+		android:layout_toRightOf="@id/cameraRotate"
+		android:text="@string/camera_layout_send"
+		/>
+
+	<Button
+		android:id="@+id/cameraSave"
+		android:layout_width="80px"
+		android:layout_height="50px"
+		android:layout_toRightOf="@id/cameraSend"
+		android:text="@string/camera_layout_save"
+		/>
+
+	<Button
+		android:id="@+id/cameraShoot"
+		android:layout_width="80px"
+		android:layout_height="50px"
+		android:layout_toRightOf="@+id/cameraSave"
+		android:text="@string/camera_layout_shoot"
+		/>
+
+	</RelativeLayout>
+	
+	<ImageView
+		android:id="@+id/cameraImage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_above="@id/cameraButtons"
+		/>
+
+    <ProgressBar android:id="@+android:id/cameraProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

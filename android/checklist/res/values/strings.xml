@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Checklist Table</string>
+    
+    <string name="groupItems">Grupiši stavke</string>
+    <string name="dontGroupItems">Negrupisano</string>
+    
+    <string name="edit_category">Uredi kategoriju</string>
+    <string name="edit_subject">Uredi subjekat</string>
+    <string name="edit_checklist">Uredi spisak</string>
+    <string name="select_image">Izaberi sliku</string>    
+    
+    <string name="categories">Kategorije</string>
+    <string name="category">Kategorija</string>
+    <string name="subjects">Predmeti</string>
+    <string name="subject">Predmet</string>
+    
+    <string name="checklist">Spisak</string>
+    <string name="checklists">Spiskovi</string>
+    <string name="items_in_checklist">Stavke u spisku</string>
+    <string name="items">Stavke</string>
+    <string name="item">Stavka</string>
+    
+    <string name="loading_data">Molimo sačekajte, učitavanje podataka...</string>
+    <string name="use_as_template">Koristi kao šablon</string>
+    <string name="move_to_category">Premesti u kategoriju</string>
+    
+    <string name="new_category">Nova kategorija</string>
+    <string name="new_subject">Novi predmet</string>
+    <string name="new_checklist">Novi spisak</string>
+    <string name="new_item">Nova stavka</string>
+    <string name="editItems">Uredi stavku</string>
+    <string name="editTitle">Uredi natpis</string>
+     
+    <string name="add_subject">Dodaj predmet</string>
+    
+    <string name="newObject">Novi</string>
+    <string name="edit">Uredi</string>
+    <string name="copy">Kopiraj</string>
+    <string name="move">Premesti</string>
+    <string name="delete">Obriši</string>
+    <string name="save">Snimi</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Odustani</string>
+    <string name="close">Zatvori</string>
+    <string name="quit">Izađi</string>
+    <string name="quitQuestion">Sigurni ste da želite da izađete iz aplikacije?</string>
+    <string name="deleteQuestion">Sigurni ste da želite da obrišete objekat?</string>
+    <string name="deleteCategory">Obriši kategoriju</string>
+    <string name="deleteCategoryViolation">Kategorija ne može biti obrisana jer sadrži predmet(e).\n
+                                            Samo kategorija koja je prazna može biti obrisana.\n
+                                            Molimo vas premestite ili obrišite sve predmete iz izabrane kategorije
+                                            i onda pokušajte ponovo da obrišete kategoriju.
+   </string>
+    <string name="deleteSubjectViolation">Subjekat ne može biti obrisan jer se koristi u bar jednom spisku.\n
+                                            Samo predmeti koji se ne koriste ni u jednom spisku mogu biti obrisani.\n
+                                            Ako i dalje želite da obrišete ovaj predmet onda obrišite odgovarajuće
+                                            stavke iz sledećih spiskova koje koriste ovaj predmet:                                               
+    </string>
+    <string name="checkAll">Čekiraj sve</string>
+    <string name="uncheckAll">Poništi sve</string>
+    
+    <string name="name">Naziv</string>
+    <string name="description">Opis</string>
+    
+    
+    <string name="image">Slika</string>
+    <string name="setImage">Postavi sliku</string>
+    <string name="templateMark">-šablon</string>
+    <string name="copyMark">-kopiraj</string>
+    
+    <string name="importData">Uvezi</string>
+    <string name="exportOne">Izvezi</string>
+    <string name="exportAll">Izvezi sve</string>
+    <string name="copyPasteImport">Kopirajte, zatim prebacite ovde podatke(u JSON formatu) koji su za uvoz</string>
+   
+    <string name="fromScratch">Iz početka</string>
+    <string name="fromTemplate">Koristeći šablon</string>
+    <string name="error">Greška</string>
+    <string name="uniqueNameViolation">Greška u radu sa bazom podataka.\nPodaci nisu snimljeni!!!\n
+                Naziv mora biti jedinstven.\n
+                Molimo vas promenite naziv a zatim pokušajte ponovo da snimite.</string>
+    
+    <string name="exportOneChecklistException">Greška pri izvozu spiska</string>
+    <string name="exportChecklistsException">Greška pri izvozu spiskova</string>
+    <string name="addChecklistsToDBException">Greška pri snimanju spiskova u bazu.\n
+                            Najverovatniji uzrok greške je taj da već postoji spisak sa takvim nazivom.\n
+                            Molimo vas izmenite naaziv spiska i zatim pokušajte da uvezete spiskove ponovo.
+   </string>
+   
+   <string name="exportOneCategoryException">Greška pri izvozu kategorije</string>
+   <string name="exportCategoryListsException">Greška pri izvozu kategorija</string>
+   
+   <string name="parseChecklistsToJsonException">Greška pri parsiranju spiskova u JSON format</string>
+   <string name="parseCategoriesToJsonException">Greška pri parsiranju kategorija u JSON format</string>
+
+   <string name="messageSubjectForExport">Izvoz iz aplikacije</string>
+   <string name="sendMail">Pošalji email...</string>
+   <string name="exceptionCreatingChecklistTemplates">Greška pri kreiranju predefinisane liste šablona za spiskove</string>
+   
+   <string name="importReport">Uspečan uvoz podataka</string>
+   <string name="inserted">Dodati objekti</string>
+   <string name="updated">Izmenjeni objekti</string>
+   <string name="ignored">Ignorisani objekti(jer verovatno već postoje)</string>
+   
+   <string name="uncategorized_name">Nekategorisani predmeti za spisak </string>
+   <string name="uncategorized_desc">Veštački kreirana kategorija za predmete pronađene za spisak</string>
+    
+   <string name="use_long_press">Molimo vas koristite dugi klik na stavku liste za dobijanje opcija kontekst menija</string>
+   <string name="emptyList">List je prazna. Za dodavanje novog objekta u listu molimo vas koristite option menu</string>
+    
+    <string-array name="pickImage">
+        <item name="application">Iz aplikacije</item>
+        <item name="sdCard">Sa SD kartice</item>
+    </string-array>
+    
+</resources>

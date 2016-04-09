@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+<head>
+<style type="text/css">
+.leftClass {
+	text-align: left;
+}
+
+.rightClass {
+	text-align: right;
+}
+
+a:visited {
+	color: white;
+}  /* visited link */
+a:hover {
+	color: gray
+}  /* mouse over link */
+a:active {
+	color: black
+} /* selected link */
+</style>
+
+
+</head>
+<body>
+<f:view>
+	<a4j:form>
+
+		<ui:include src="toolbar.xhtml" />
+
+		<h:panelGrid columns="2"
+			style="margin-left: auto; margin-right: auto;">
+			<ui:insert name="twoColumns">
+				<rich:panelBar width="300" height="600">
+					<ui:include src="contacts.xhtml" />
+				</rich:panelBar>
+				<rich:panelBar width="580" height="600">
+					<rich:panelBarItem label="Contacts" style="padding:0">
+						<rich:panel id="Editor">
+							<ui:include src="contactEditor.xhtml" />
+							<rich:spacer height="10" />
+							<ui:include src="addresses.xhtml" />
+							<rich:spacer height="10" />
+							<ui:include src="phones.xhtml" />
+							<rich:spacer height="10" />
+							<ui:include src="emails.xhtml" />
+							<rich:spacer height="10" />
+							<ui:include src="websites.xhtml" />
+							<rich:spacer height="10" />
+							<ui:include src="celebrations.xhtml" />
+						</rich:panel>
+					</rich:panelBarItem>
+				</rich:panelBar>
+			</ui:insert>
+		</h:panelGrid>
+	</a4j:form>
+
+	<ui:include src="addressEditor.xhtml" />
+	<ui:include src="phoneEditor.xhtml" />
+	<ui:include src="emailEditor.xhtml" />
+	<ui:include src="websiteEditor.xhtml" />
+	<ui:include src="celebrationEditor.xhtml" />
+</f:view>
+</body>
+</html>

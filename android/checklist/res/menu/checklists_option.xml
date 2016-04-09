@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/new_checklist"
+          android:icon="@android:drawable/ic_menu_add"
+          android:title="@string/new_checklist" />
+    <item android:id="@+id/categories"
+            android:icon="@drawable/categories_grey"
+            android:title="@string/categories" />
+     <item android:id="@+id/exportList"
+            android:icon="@drawable/export"
+            android:title="@string/exportAll" />
+     <item android:id="@+id/importList"
+            android:icon="@drawable/import_all"
+            android:title="@string/importData" />
+     <!--<item android:id="@+id/quit"
+          android:icon="@drawable/ic_menu_close_clear_cancel"
+          android:title="@string/quit" />          
+    -->
+</menu>

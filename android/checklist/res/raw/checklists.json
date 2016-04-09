@@ -1,0 +1,55 @@
+[
+    {
+        "name" : "Vikend na planini", 
+        "description" : "Vikend na planini",
+        "subjects": [
+            {"name" : "Mobilni telefon"}, 
+            {"name" : "Punjač za mobilni"}, 
+            {"name" : "Pasta"}, 
+            {"name" : "Šampon"}
+        ]
+    },
+    {    
+        "name" : "Roštiljanje", 
+        "description" : "Roštilj za jedan dan",
+        "subjects": [
+            {"name" : "Salvete"},
+            {"name" : "Upaljač"},
+            {"name" : "Roštilj aparat"},
+            {"name" : "Začini"},
+            {"name" : "Voda"},
+            {"name" : "Pivo"},
+            {"name" : "Sok"},
+            {"name" : "Meso"},
+            {"name" : "Escajg"},
+            {"name" : "Tanjirići"},
+            {"name" : "Povrće"}
+        ]
+    },
+    {    
+        "name" : "Sedmična kupovina", 
+        "description" : "Sedmična kupovina u supermarketu",
+        "subjects": [
+            {"name" : "Mleko"},
+            {"name" : "Jaja"},
+            {"name" : "Meso"},
+            {"name" : "Voda"},
+            {"name" : "Pivo"},
+            {"name" : "Sok"},
+            {"name" : "Povrće"}
+        ]
+    },
+    {    
+        "name": "Letovanje na moru", 
+        "description" : "Letovanje na moru za 10 dana",
+        "subjects": [
+            {"name" : "Mobilni telefon"}, 
+            {"name" : "Punjač za mobilni"}, 
+            {"name" : "Pasta"}, 
+            {"name" : "Šampon"}, 
+            {"name" : "Brijač"},
+            {"name" : "Pena"},
+            {"name" : "Kupaće gaće"}
+        ]
+    }
+]

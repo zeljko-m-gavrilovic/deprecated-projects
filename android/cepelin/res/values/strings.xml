@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Cepelin</string>
+
+	<string name="cafeoview_no_items">Nema podataka za prikaz.</string>
+
+	<string name="cafe_tab">Kafé</string>
+	<string name="food_tab">Restorani</string>
+	<string name="events_tab">Događaji</string>
+	<string name="mapall_tab">Mapa</string>
+	<string name="info_tab">Info</string>
+	<string name="comments_tab">Utisci</string>
+	<string name="map_tab">Mapa</string>
+	<string name="gallery_tab">Galerija</string>
+
+	<string name="title_comment_dialog">Utisci</string>
+	<string name="button_ok">OK</string>
+
+	<!-- camera -->
+	<string name="object_with_illegal_id">Ne postoji objekat čiji je id -1</string>
+	<string name="tap_screen_to_take_picture">Pritisnite ekran da biste slikali.</string>
+	<string name="picture_saved_1">Slika</string>
+	<string name="picture_saved_2">je sačuvana na SD karticu.</string>
+	<string name="can_not_save_picture">Nije moguće sačuvati sliku na SD karticu.</string>
+	<string name="not_enough_memory_to_rotate">Nema dovoljno memorije da se dovrši operacija
+		rotiranja.\nIzaberite manje dimenzije slike.</string>
+	<string name="picture_not_sent_try_later">Problem: slika nije poslata.\nPokušajte ponovo
+		kasnije.</string>
+	<string name="picture_sent">Slika je uspešno poslata.</string>
+	<string name="can_not_create_bitmap">Nije moguće kreirati bitmapu. Pokušajte kasnije.
+	</string>
+
+	<!-- gallery -->
+	<string name="no_pictures_for_object">Ne postoje slike o traženom\nobjektu odnosno
+		događaju.\nPošaljite sliku klikom\nna sličicu ispod.</string>
+	<string name="full_screen">Ceo ekran</string>
+	<string name="normal_screen">Normalan ekran</string>
+	<string name="refresh">Osvеži</string>
+
+	<!-- camera layout -->
+	<string name="camera_layout_rotate">Rotiraj</string>
+	<string name="camera_layout_send">Pošalji</string>
+	<string name="camera_layout_save">Sačuvaj</string>
+	<string name="camera_layout_shoot">Slikaj</string>
+
+	<!-- gallery layout -->
+	<string name="gallery_layout_previous">Prethodna</string>
+	<string name="gallery_layout_shoot">Slikaj</string>
+	<string name="gallery_layout_next">Sledеća</string>
+	<string name="ok">OK</string>
+
+	<string name="add_comment">Dodaj</string>
+	<string name="item_cancel_comment">Zatvori</string>
+	<string name="comment_added">Dodali ste utisak.</string>
+
+	<!-- compass filter menu layout -->
+	<string name="compass_filter_on">Uključi kompas</string>
+	<string name="compass_filter_off">Isključi kompas</string>
+
+	<!-- compass directions -->
+
+	<string name="COMPASS_N">Sever</string>
+	<string name="COMPASS_NNE">Sever Severo-Istok</string>
+	<string name="COMPASS_NE">Severo-Istok</string>
+	<string name="COMPASS_ENE">Istok Severo-Istok</string>
+
+	<string name="COMPASS_E">Istok</string>
+	<string name="COMPASS_ESE">Istok Jugo-Istok</string>
+	<string name="COMPASS_SE">Jugo-Istok</string>
+	<string name="COMPASS_SSE">Jug Jugo-Istok</string>
+
+	<string name="COMPASS_S">Jug</string>
+	<string name="COMPASS_SSW">Jug Jugo-Zapad</string>
+	<string name="COMPASS_SW">Jugo-Zapad</string>
+	<string name="COMPASS_WSW">Zapad Jugo-Zapad</string>
+
+	<string name="COMPASS_W">Zapad</string>
+	<string name="COMPASS_WNW">Zapad Severo-Zapad</string>
+	<string name="COMPASS_NW">Severo-Zapad</string>
+	<string name="COMPASS_NNW">Sever Severo-Zapad</string>
+
+	<!--  other -->
+	<string name="loading_title">Sačekajte trenutak...</string>
+	<string name="loading_message">Podaci se učitavaju.</string>
+</resources>

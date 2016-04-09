@@ -1,0 +1,45 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="common_margins">
+        <item name="android:layout_marginLeft">@dimen/common_margins</item>
+        <item name="android:layout_marginRight">@dimen/common_margins</item>
+    </style>
+
+    <style name="label_margins">
+        <item name="android:layout_marginLeft">@dimen/label_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/label_margin_left</item>
+    </style>
+
+    <style name="header" parent="@style/label_margins">
+        <item name="android:textSize">@dimen/text_header</item>
+        <item name="android:layout_marginTop">@dimen/header_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/header_margin_bottom</item>
+    </style>
+
+    <style name="label" parent="@style/label_margins">
+        <item name="android:textSize">@dimen/text_label</item>
+        <item name="android:layout_marginTop">@dimen/common_margins</item>
+    </style>
+
+    <style name="label_header" parent="@style/label">
+        <item name="android:layout_marginTop">@dimen/header_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/header_margin_bottom</item>
+    </style>
+
+    <style name="edittext" parent="@style/common_margins">
+        <item name="android:textSize">@dimen/text_edittext</item>
+        <item name="android:layout_marginBottom">@dimen/edittext_margin_bottom</item>
+    </style>
+
+    <style name="button" parent="@style/common_margins">
+        <item name="android:layout_marginTop">@dimen/button_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/button_margin_bottom</item>
+        <item name="android:textSize">@dimen/text_button</item>
+        <item name="android:layout_width">200dip</item>
+        <item name="android:maxWidth">200dip</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+</resources>

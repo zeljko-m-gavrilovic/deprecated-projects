@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application setting -->
+    <string name="app_name">Ecomm</string>
+    <string name="app_theme">@android:style/Theme.Black</string>
+    <string name="version">v1.4</string>
+    <string name="server_url">http://effectacalls.dyndns.org:8080/spf/</string>
+    <!--
+    <string name="server_url">http://effectacalls.dyndns.org:8070/spf/</string>
+    <string name="server_url">http://95.180.23.50:8081/ecomm/</string> 
+    -->
+    <!-- Registration Activity -->
+
+    <string name="registrationMessage">Welcome to Ecomm application!
+        Please fill the data below and click \'Register\' button.</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="phoneNumber">Phone Number (+381123456 or 063123456)</string>
+    <string name="registration">Registration</string>
+    <string name="name_mandatory">Name field must be fullfiled!</string>
+    <string name="surname_mandatory">Surname field must be fullfiled!</string>
+    <string name="phone_number_mandatory">Phone number field must be fullfiled!</string>
+    <string name="phone_number_not_valid">Phone number field is not valid!</string>
+    <string name="registering_user">Registering user to server...</string>
+    <string name="no_properties_file">Problem loading properties file...</string>
+    
+    <!-- Main Activity -->
+
+    <string name="photo">Photo</string>
+    <string name="comment">Comment</string>
+    <string name="uploadData">Upload data</string>
+    <string name="takePhoto">Take photo</string>
+    <string name="removePhoto">Remove photo</string>
+    <string name="exception_reading_image_file">Exception reading the image file.</string>
+    <string name="comment_mandatory">Comment field should not be empty!</string>
+    <string name="gps_setting">GPS sensor is currently turned off. Would you like to turn it on?</string>
+	<string name="uploading_data">Uploading data to server...</string>
+
+    <!-- Common labels -->
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok_ok">OK</string>
+    
+    <!-- Server response messages -->
+    
+    <string name="httpt_response_minus_one">Connection exception. Can\'t connect to server</string>
+    <string name="exception_in_communication">Error in communication with server</string>
+    <string name="error_in_communication">Error in communication with server. Response code: </string>
+    <string name="registration.error.emptyFields">Registration failed. All fields must be entered!</string>
+    <string name="registration.successfull">You are successfully registered.
+        \nThank  You for using Ecomm application!</string>
+    <string name="server.not.working">Can not connect to server </string>
+    <string name="connector.on.pause">Server is temporary unavailable for uploding data. Please try again later...</string>
+    <string name="request.is.missing.authenication.data">User not send appropriate authentification data!</string>
+    <string name="user.with.such.phone.not.registered">User with such smart phone not registered!</string>
+    <string name="forbiden.access.to.server">Forbidden access to server!</string>
+    <string name="authentication.failed">Authentication failed, authentification data doesn\'t match the expected values!</string>
+    <string name="authentication.failed.upload.key">Authentication failed, upload key doesn\'t match the expected value!</string>
+    <string name="max.number.of.uplods.per.day.exceeded">Data not uploaded. Number of uploads per day exceeded!</string>
+    <string name="successfully.uploaded.data">Successfully uploaded data</string>
+    <string name="error_uploading_data">Data not uploaded.</string>
+
+    <!-- Opštine -->
+    <string name="select_city">Choose municipality</string>
+
+    <string-array name="cities">
+        <item>Aranđelovac</item>
+        <item>Novi Beograd</item>
+        <item>Kraljevo</item>
+        <item>Novi Sad</item>
+    </string-array>
+
+    <string name="default_city">Novi Beograd</string>
+    
+</resources>

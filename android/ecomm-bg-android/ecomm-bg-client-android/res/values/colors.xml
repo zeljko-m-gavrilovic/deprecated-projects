@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- GENERAL -->
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#bebebe</color>
+    <color name="white_semi_transparent">#30ffffff</color>
+
+    <!-- OTHER -->
+    <color name="separator">@color/white_semi_transparent</color>
+    <color name="label">@color/white</color>
+
+</resources>

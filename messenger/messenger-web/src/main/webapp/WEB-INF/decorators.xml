@@ -1,0 +1,21 @@
+<decorators defaultdir="/decorators">
+    <excludes>
+        <pattern>/40*.jsp</pattern>
+        <pattern>/*ajax=true*</pattern>
+        <pattern>/scripts/dojo/*</pattern>
+        <pattern>/struts/dojo/*</pattern>
+        <pattern>/scripts/yuimenu/*</pattern> 
+        <pattern>/resources/*</pattern>
+        <pattern>/*Search*</pattern>
+    </excludes>
+    <decorator name="default" page="default.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+    <decorator name="noMenu" page="noMenu.jsp">
+        <pattern>/login*</pattern>
+        <pattern>/signup*</pattern>
+    </decorator>
+    <decorator name="list" page="list.jsp">
+        <pattern>/list*</pattern>
+    </decorator>
+</decorators>

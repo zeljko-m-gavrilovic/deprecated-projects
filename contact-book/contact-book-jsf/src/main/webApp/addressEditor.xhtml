@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+
+<rich:modalPanel id="addressPanel" autosized="true" width="450">
+	<f:facet name="header">
+		<h:outputText value="Edit Current Address" />
+	</f:facet>
+	<f:facet name="controls">
+		<h:panelGroup>
+			<h:graphicImage value="/images/modal/close.png" id="hidelink"
+				styleClass="hidelink" />
+			<rich:componentControl for="addressPanel" attachTo="hidelink"
+				operation="hide" event="onclick" />
+		</h:panelGroup>
+	</f:facet>
+	<h:form>
+		<rich:messages style="color:red;"></rich:messages>
+		<h:panelGrid columns="1">
+			#{contactBackingBean.contact}
+				<a4j:outputPanel ajaxRendered="true">
+				<h:panelGrid columns="2">
+					<h:outputText value="Type" />
+					<h:selectOneMenu id="type"
+						value="#{contactBackingBean.contact.addresses[contactBackingBean.currentRow].type}">
+						<f:converter converterId="addressTypeConverter" />
+						<f:selectItems value="#{contactBackingBean.addressTypeChoices}"/>
+					</h:selectOneMenu>
+					<h:outputText value="State" />
+					<h:inputText
+						value="#{contactBackingBean.contact.addresses[contactBackingBean.currentRow].state}" />
+					<h:outputText value="City" />
+					<h:inputText
+						value="#{contactBackingBean.contact.addresses[contactBackingBean.currentRow].city}" />
+					<h:outputText value="Street" />
+					<h:inputText
+						value="#{contactBackingBean.contact.addresses[contactBackingBean.currentRow].street}" />
+				</h:panelGrid>
+			</a4j:outputPanel>
+			<a4j:commandButton value="Store address"
+				action="#{contactBackingBean.storeAddress}" reRender="Editor"
+				oncomplete="if (#{facesContext.maximumSeverity==null}) #{rich:component('addressPanel')}.hide();" />
+			<a4j:commandButton value="Cancel"
+				onclick="#{rich:component('addressPanel')}.hide(); return false;" />
+		</h:panelGrid>
+	</h:form>
+</rich:modalPanel>
+
+<rich:modalPanel id="deleteAddressPanel" autosized="true" width="200">
+	<f:facet name="header">
+		<h:outputText value="Delete address permanently?"
+			style="padding-right:15px;" />
+	</f:facet>
+	<f:facet name="controls">
+		<h:panelGroup>
+			<h:graphicImage value="/images/led/cancel.png" styleClass="hidelink"
+				id="hidelink2" />
+			<rich:componentControl for="deleteAddressPanel" attachTo="hidelink2"
+				operation="hide" event="onclick" />
+		</h:panelGroup>
+	</f:facet>
+	<h:form>
+		<table width="100%">
+			<tbody>
+				<tr>
+					<td align="center" width="50%"><a4j:commandButton value="Yes"
+						ajaxSingle="true" action="#{contactBackingBean.delete}"
+						oncomplete="#{rich:component('deleteAddressPanel')}.hide();"
+						reRender="table" /></td>
+					<td align="center" width="50%"><a4j:commandButton
+						value="Cancel"
+						onclick="#{rich:component('deleteAddressPanel')}.hide(); return false;" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</h:form>
+</rich:modalPanel>
+</html>

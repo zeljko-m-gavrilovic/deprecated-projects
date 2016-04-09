@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+
+<h:panelGrid columns="2" columnClasses="leftClass,rightClass"
+	width="500">
+	<h:outputText value="Addresses" />
+	<a4j:commandLink ajaxSingle="true" id="addAddresslink"
+		oncomplete="#{rich:component('addressPanel')}.show()"
+		action="#{contactBackingBean.addNewAddress}">
+		<h:graphicImage value="/images/add.png" />
+	</a4j:commandLink>
+</h:panelGrid>
+<rich:toolTip for="addAddresslink" value="Add" />
+
+
+<rich:dataTable value="#{contactBackingBean.contact.addresses}"
+	columnClasses="leftClass,rightClass" var="address" id="addressesTable"
+	rowKeyVar="rowAddress" width="500">
+	<rich:column>
+		<f:facet name="header">
+                        		Street
+                			</f:facet>
+		<h:outputText value="#{address.street}" />
+	</rich:column>
+	<rich:column width="100px">
+		<f:facet name="header">
+		City
+                			</f:facet>
+		<h:outputText value="#{address.city}" />
+	</rich:column>
+	<rich:column width="100px">
+		<f:facet name="header">
+                        		State
+                			</f:facet>
+		<h:outputText value="#{address.state}" />
+	</rich:column>
+	<!--<rich:column>
+		<f:facet name="header" width="50px">
+                        		ZipCode
+                			</f:facet>
+		<h:outputText value="#{address.zipCode}" />
+	</rich:column>
+	--><rich:column width="40">
+		<f:facet name="header">
+                        		Actions
+                			</f:facet>
+		<a4j:commandLink ajaxSingle="true" id="editAddresslink"
+			oncomplete="#{rich:component('addressPanel')}.show()">
+			<h:graphicImage value="/images/edit.png" />
+			<f:setPropertyActionListener value="#{rowAddress}"
+				target="#{contactBackingBean.currentRow}" />
+		</a4j:commandLink>
+		<rich:toolTip for="editAddresslink" value="Edit" />
+
+		<a4j:commandLink ajaxSingle="true" id="deletelink"
+			oncomplete="#{rich:component('deletePanel')}.show()">
+			<h:graphicImage value="/images/delete.png" />
+			<f:setPropertyActionListener value="#{rowAddress}"
+				target="#{contactBackingBean.currentRow}" />
+		</a4j:commandLink>
+		<rich:toolTip for="deletelink" value="Delete" />
+	</rich:column>
+</rich:dataTable>
+</html>

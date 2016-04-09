@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Checklist Table</string>
+    
+    <string name="groupItems">Group Items</string>
+    <string name="dontGroupItems">Don\'t Group</string>
+    
+    <string name="edit_category">Edit Category</string>
+    <string name="edit_subject">Edit Subject</string>
+    <string name="edit_checklist">Edit Checklist</string>
+    <string name="select_image">Select image</string>    
+    
+    <string name="categories">Categories</string>
+    <string name="category">Category</string>
+    <string name="subjects">Subjects</string>
+    <string name="subject">Subject</string>
+    
+    <string name="checklist">Checklist</string>
+    <string name="checklists">Checklists</string>
+    <string name="items_in_checklist">Items in checklist</string>
+    <string name="items">Items</string>
+    <string name="item">Item</string>
+    
+    <string name="loading_data">Please wait, loading data...</string>
+    <string name="use_as_template">Use as template</string>
+    <string name="move_to_category">Move to category</string>
+    
+    <string name="new_category">New Category</string>
+    <string name="new_subject">New Subject</string>
+    <string name="new_checklist">New Checklist</string>
+    <string name="new_item">New Item</string>
+    <string name="editItems">Edit Items</string>
+    <string name="editTitle">Edit Title</string>
+     
+    <string name="add_subject">Add Subject</string>
+    
+    <string name="newObject">New</string>
+    <string name="edit">Edit</string>
+    <string name="copy">Copy</string>
+    <string name="move">Move</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="quit">Quit</string>
+    <string name="quitQuestion">Are you sure you want to quit the application?</string>
+    <string name="deleteQuestion">Are you sure you want to delete the object?</string>
+    <string name="deleteCategory">Delete Category</string>
+    <string name="deleteCategoryViolation">Category can\'t be deleted because it contains subject(s).\n
+                                            Only empty category can be deleted.\n
+                                            Please move or delete all subjects from the selected category and 
+                                            then try to delete the category.
+   </string>
+    <string name="deleteSubjectViolation">Subject can\'t be deleted because it is used in at least one checklist.\n
+                                            Only subject which is not used in any checklist can be deleted.\n
+                                            If you stil want to delete this subject you must first delete the items 
+                                            in the following checklists:                                               
+    </string>
+    <string name="checkAll">Check all</string>
+    <string name="uncheckAll">Uncheck all</string>
+    
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    
+    
+    <string name="image">Image</string>
+    <string name="setImage">Set Image</string>
+    <string name="templateMark">-template</string>
+    <string name="copyMark">-copy</string>
+    
+    <string name="importData">Import</string>
+    <string name="exportOne">Export</string>
+    <string name="exportAll">Export all</string>
+    <string name="copyPasteImport">Copy, then paste here checklists(in JSON format) to be imported</string>
+   
+    <string name="fromScratch">From Scratch</string>
+    <string name="fromTemplate">From Template</string>
+    <string name="error">Error</string>
+    <string name="uniqueNameViolation">Exception in work with DB.\nData not saved!!!\n
+                                        Name field must be unique.\n
+                                        Please set another name and then try to save again.</string>
+    
+    <string name="exportOneChecklistException">Exception during export of this checklist</string>
+    <string name="exportChecklistsException">Exception during export of checklist objects</string>
+    <string name="addChecklistsToDBException">Exception while trying to add cheklist objects to database.\n
+                            Most probably cause of the exception is that the checklist with the same name already exist.\n
+                            Please try to change the name of the suspicious cheklist and then try import it again.
+   </string>
+   
+   <string name="exportOneCategoryException">Exception during export of this category</string>
+   <string name="exportCategoryListsException">Exception during export of category objects</string>
+   
+   <string name="parseChecklistsToJsonException">Exception while parsing checklist objects in JSON format</string>
+   <string name="parseCategoriesToJsonException">Exception while parsing category objects in JSON format</string>
+
+   <string name="messageSubjectForExport">Export from application</string>
+   <string name="sendMail">Send mail...</string>
+   <string name="exceptionCreatingChecklistTemplates">Exception creating predefined list of checklist templates</string>
+   
+   <string name="importReport">Successfull import</string>
+   <string name="inserted">Inserted objects</string>
+   <string name="updated">Updated objects</string>
+   <string name="ignored">Ignored objects(because most probably they already exists)</string>
+   
+   <string name="uncategorized_name">Uncategorized subjects for checklist </string>
+   <string name="uncategorized_desc">Artifitial category for missing subjects found in this checklist</string>
+   
+   <string name="use_long_press">Please use long press on list item for context menu options</string>
+   <string name="emptyList">List is empty. Please use option menu to add new object in list</string>
+    
+    <string-array name="pickImage">
+        <item name="application">From application</item>
+        <item name="sdCard">From SD card</item>
+    </string-array>
+    
+</resources>

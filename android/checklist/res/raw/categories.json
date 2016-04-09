@@ -1,0 +1,231 @@
+[
+    {    
+        "name" : "Pripreme za odlazak", 
+        "description" : "Pripreme za odlazak na putovanje",
+        "subjects": [
+            {"name" : "Zalivanje cveća"},
+            {"name" : "Baterije napuniti"},
+            {"name" : "Pakovanje"},
+            {"name" : "Mapa"},
+            {"name" : "Benzin za kola"},
+            {"name" : "Šporet proveriti"},
+            {"name" : "Bojler proveriti"},
+            {"name" : "Vodu proveriti"},
+            {"name" : "Peglu proveriti"},
+            {"name" : "Grejanje proveriti"},
+            {"name" : "Gas proveriti"},
+            {"name" : "Klimu proveriti"},
+            {"name" : "Zaključati vrata"},
+            {"name" : "Zatvoriti prozore"},
+            {"name" : "Isključiti svetlo"},
+            {"name" : "Oprati sudove"},
+            {"name" : "Kupiti grickalice"},
+            {"name" : "Đubre izaciti"}
+        ]
+    },
+    {    
+        "name" : "Sitnice", 
+        "description" : "Modni detalji i sitnice",
+        "subjects": [
+            {"name" : "Ogledalo"},
+            {"name" : "Ključevi"},
+            {"name" : "Knjiga"},
+            {"name" : "Kompas"},
+            {"name" : "Uputstvo"},
+            {"name" : "Naočare"},
+            {"name" : "Sat"},
+            {"name" : "Nakit"},
+            {"name" : "Olovka"},
+            {"name" : "Upaljač"},
+            {"name" : "Notes"}
+        ]
+    },
+    {    
+        "name" : "Higijena", 
+        "description" : "Higijena",
+        "subjects": [
+            {"name" : "Pasta"},
+            {"name" : "Četkica"},
+            {"name" : "Konac"},
+            {"name" : "Brijač"},
+            {"name" : "Pena"},
+            {"name" : "Aftershave"},
+            {"name" : "Dezodorans"},
+            {"name" : "Parfem"},
+            {"name" : "Šminka"},
+            {"name" : "Ulošci"},
+            {"name" : "Tamponi"},
+            {"name" : "Sapun"},
+            {"name" : "Maramice"},
+            {"name" : "Peškiri"},
+            {"name" : "Toalet papir"},
+            {"name" : "Šampon"}
+        ]
+    },
+    {    
+        "name" : "Zdravlje", 
+        "description" : "Zdravlje",
+        "subjects": [
+            {"name" : "Prva Pomoc"},
+            {"name" : "Zavoj"},
+            {"name" : "Lek"},
+            {"name" : "Krema"},
+            {"name" : "Krema za sunčanje"},
+            {"name" : "Kondomi"},
+            {"name" : "Pilule za spavanje"},
+            {"name" : "Pilule protiv mučnine"},
+            {"name" : "Vitamini"}
+        ]
+    },
+    {    
+        "name" : "Deca", 
+        "description" : "Stvari za decu",
+        "subjects": [
+            {"name" : "Patikice"},
+            {"name" : "Odelo"},
+            {"name" : "Hrana"},
+            {"name" : "Mleko"},
+            {"name" : "Krevetac"},
+            {"name" : "Pelene"},
+            {"name" : "Dečije sedište za kola"},
+            {"name" : "Krema za dete"},
+            {"name" : "Igračke"}
+        ]
+    },
+    {    
+        "name" : "Dokumenta", 
+        "description" : "Lična dokumenta",
+        "subjects": [
+            {"name" : "Karta za autobus"},
+            {"name" : "Karta za voz"},
+            {"name" : "Karta za avion"},
+            {"name" : "Karta za trajekt"},
+            {"name" : "Viza"},
+            {"name" : "Novčanik"},
+            {"name" : "Novac"},
+            {"name" : "Kartice"},
+            {"name" : "Pasoš"},
+            {"name" : "Vozačka dozvola"},
+            {"name" : "Saobraćajna dozvola"},
+            {"name" : "Dokumenta za decu"},
+            {"name" : "Dokumenta za ljubimce"}
+        ]
+    },
+    {    
+        "name" : "Obuća", 
+        "description" : "Obuća",
+        "subjects": [
+            {"name" : "Patike"},
+            {"name" : "Cizme"},
+            {"name" : "Štikle"},
+            {"name" : "Sandale"},
+            {"name" : "Papuče"},
+            {"name" : "Klompe"},
+            {"name" : "Cipele"}
+        ]
+    },
+    {    
+        "name" : "Odeća", 
+        "description" : "Odeća",
+        "subjects": [
+            {"name" : "Majica kratki rukavi"},
+            {"name" : "Majica dugački rukavi"},
+            {"name" : "Dukserica"},
+            {"name" : "Trenerka"},
+            {"name" : "Pantalone"},
+            {"name" : "Sako"},
+            {"name" : "Jakna"},
+            {"name" : "Čarape"},
+            {"name" : "Kapa"},
+            {"name" : "Šal"},
+            {"name" : "Kaiš"},
+            {"name" : "Gaće"},
+            {"name" : "Brushalter"},
+            {"name" : "Džemper"},
+            {"name" : "Rolka"},
+            {"name" : "Suknja"},
+            {"name" : "Haljina"},
+            {"name" : "Bluza"},
+            {"name" : "Sorz"},
+            {"name" : "Bermude"},
+            {"name" : "Kravata"},
+            {"name" : "Bikini"},
+            {"name" : "Kupaće gaće"},
+            {"name" : "Dugacke gaće"},
+            {"name" : "Potkošulja"},
+            {"name" : "Pidžama"},
+            {"name" : "Košulja"}
+        ]
+    },
+    {    
+        "name" : "Tehnika", 
+        "description" : "Tehničke stvari",
+        "subjects": [
+            {"name" : "Mobilni telefon"},
+            {"name" : "Laptop"},
+            {"name" : "Fotoaparat"},
+            {"name" : "Radio"},
+            {"name" : "TV"},
+            {"name" : "USB Fleš"},
+            {"name" : "CD-plejer"},
+            {"name" : "DVD-plejer"},
+            {"name" : "Baterije"},
+            {"name" : "Slušalice"},
+            {"name" : "Frižider"},
+            {"name" : "Punjač za baterije"},
+            {"name" : "Punjač za laptop"},
+            {"name" : "Punjač za mobilni"}
+        ]
+    },
+    {    
+        "name" : "Hrana i piće", 
+        "description" : "Hrana i piće",
+        "subjects": [
+            {"name" : "Voda"},
+            {"name" : "Kafa"},
+            {"name" : "Meso"},
+            {"name" : "Jaja"},
+            {"name" : "Ulje"},
+            {"name" : "Mast"},
+            {"name" : "Povrće"},
+            {"name" : "Voće"},
+            {"name" : "Cigarete"},
+            {"name" : "Hleb"},
+            {"name" : "Začini"},
+            {"name" : "Pivo"},
+            {"name" : "Vino"},
+            {"name" : "Sok"},
+            {"name" : "Rakija"},
+            {"name" : "Čaj"}
+        ]
+    },
+    {    
+        "name" : "Sportska oprema", 
+        "description" : "Sportska oprema",
+        "subjects": [
+            {"name" : "Reket"},
+            {"name" : "Ronilačka oprema"},
+            {"name" : "Skije"},
+            {"name" : "Snowboard"},
+            {"name" : "Kaciga"},
+            {"name" : "Kopačke"},
+            {"name" : "Vreća za spavanje"},
+            {"name" : "Lopta"}
+        ]
+    },
+    {    
+        "name" : "Neodređeno", 
+        "description" : "Neodređene stvari"
+    },
+    {    
+        "name": "Posuđe", 
+        "description" : "Posuđe i pribor za hranu",
+        "subjects": [
+            {"name" : "Salvete"},
+            {"name" : "Čaše"},
+            {"name" : "Escajg"},
+            {"name" : "Roštilj aparat"},
+            {"name" : "Tanjirići"}
+        ]
+    }
+]

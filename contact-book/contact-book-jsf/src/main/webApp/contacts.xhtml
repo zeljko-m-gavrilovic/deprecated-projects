@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+
+<rich:panelBarItem label="Contacts" style="padding:0">
+	<rich:extendedDataTable id="contactsTable"
+		value="#{contactBackingBean.contactsDataModel}" var="contact"
+		width="260px" height="550px" selectedClass="dataTableSelectedRow"
+		sortMode="single" selectionMode="single"
+		selection="#{contactBackingBean.selection}"
+		tableState="#{contactBackingBean.tableState}" rowKeyVar="rkvar">
+
+		<rich:column id="id" headerClass="dataTableHeader" width="30"
+			label="Id" sortable="true" sortBy="#{contact.id}"
+			sortIconAscending="dataTableAscIcon"
+			sortIconDescending="dataTableDescIcon">
+			<f:facet name="header">
+				<h:outputText value="Id" />
+			</f:facet>
+			<h:outputText value="#{contact.id}" />
+		</rich:column>
+
+		<rich:column id="type" headerClass="dataTableHeader" width="25"
+			label="Type" sortable="true" sortBy="#{contact.type}"
+			sortIconAscending="dataTableAscIcon"
+			sortIconDescending="dataTableDescIcon">
+			<f:facet name="header">
+				<h:outputText value="Type" />
+			</f:facet>
+			<h:graphicImage value="/images/user_male.png"
+				rendered="#{(contact.type == 'Person') and (contact.title == 'Mr.')}" />
+			<h:graphicImage value="/images/user_female.png"
+				rendered="#{(contact.type == 'Person') and (contact.title == 'Mrs.')}" />
+			<h:graphicImage value="/images/organisation.png"
+				rendered="#{(contact.type == 'Organization')}" />
+			<h:graphicImage value="/images/marker.png"
+				rendered="#{(contact.type == 'Contact')}" />
+		</rich:column>
+
+		<rich:column id="name" headerClass="dataTableHeader" label="Name"
+			sortable="true" sortBy="#{contact.name}"
+			sortIconAscending="dataTableAscIcon"
+			sortIconDescending="dataTableDescIcon" filterBy="#{contact.name}"
+			filterEvent="onkeyup" visible="true">
+			<f:facet name="header">
+				<h:outputText value="Name" />
+			</f:facet>
+			<h:outputText value="#{contact.name}" />
+		</rich:column>
+
+		<rich:column width="30">
+			<!--<f:facet name="header">
+                        		Actions
+                			</f:facet>
+			-->
+			<a4j:commandLink ajaxSingle="true" id="deletelink"
+				oncomplete="#{rich:component('deletePanel')}.show()">
+				<h:graphicImage value="/images/delete.png" />
+				<f:setPropertyActionListener value="#{contact}"
+					target="#{contactBackingBean.contact}" />
+				<f:setPropertyActionListener value="#{row}"
+					target="#{contactBackingBean.currentRow}" />
+			</a4j:commandLink>
+		</rich:column>
+
+		<rich:toolTip for="deletelink" value="Delete" />
+		<a4j:support reRender="Editor" id="extended_table_bean_take_selection"
+			action="#{contactBackingBean.takeSelection}"
+			event="onselectionchange" />
+	</rich:extendedDataTable>
+</rich:panelBarItem>
+
+<rich:panelBarItem label="Groups">
+					List of groups
+				</rich:panelBarItem>
+
+<rich:panelBarItem label="Other">
+					List of other objects
+				</rich:panelBarItem>
+</html>

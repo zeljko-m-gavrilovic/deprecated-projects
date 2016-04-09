@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"    
+    android:padding="6dip">
+    
+	<ImageView
+	    android:id="@+id/distanceicon"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="6dip" />
+	    
+	<TextView  
+	    android:id="@+id/ettl"
+	
+	    android:layout_width="wrap_content"
+	    android:layout_height="26dip"
+		android:layout_marginRight="72dp"
+		android:textStyle="bold"
+	    
+	    android:layout_toRightOf="@id/distanceicon"
+
+	    android:singleLine="true"
+	    android:ellipsize="marquee"
+	    android:text="Test Title of Cinema" />
+	    
+	<RatingBar 
+		android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content"
+		android:numStars="5"
+		style="?android:attr/ratingBarStyleSmall"
+		android:layout_alignParentRight="true"
+		android:id="@+id/oviewRatingBar" 
+		/>
+		
+	<TextView
+		android:id="@+id/edescr"
+		
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    
+	    android:layout_toRightOf="@id/distanceicon"
+
+	    android:layout_below="@id/ettl"
+	    
+	    android:layout_alignWithParentIfMissing="true"
+	    android:gravity="top"
+	    
+	    android:text="Some Description blah blahb albhal bhalbh" />
+	    
+	<TextView  
+	    android:id="@+id/eid"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+	    android:visibility="gone"/>	    
+	
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+
+<rich:modalPanel id="phonePanel" autosized="true" width="450">
+	<f:facet name="header">
+		<h:outputText value="Edit Current Phone" />
+	</f:facet>
+	<f:facet name="controls">
+		<h:panelGroup>
+			<h:graphicImage value="/images/modal/close.png" id="phoneHideLink"
+				styleClass="phoneHideLink" />
+			<rich:componentControl for="phonePanel" attachTo="hidelink"
+				operation="hide" event="onclick" />
+		</h:panelGroup>
+	</f:facet>
+	<h:form>
+		<rich:messages style="color:red;"></rich:messages>
+		<h:panelGrid columns="1">
+			#{contactBackingBean.contact}
+				<a4j:outputPanel ajaxRendered="true">
+				<h:panelGrid columns="2">
+					<h:outputText value="Type" />
+					<h:inputText
+						value="#{contactBackingBean.contact.phones[contactBackingBean.currentRow].type}" />
+					<h:outputText value="Phone" />
+					<h:inputText
+						value="#{contactBackingBean.contact.phones[contactBackingBean.currentRow].value}" />
+				</h:panelGrid>
+			</a4j:outputPanel>
+			<a4j:commandButton value="Store phone"
+				action="#{contactBackingBean.storePhone}" reRender="Editor"
+				oncomplete="if (#{facesContext.maximumSeverity==null}) #{rich:component('phonePanel')}.hide();" />
+			<a4j:commandButton value="Cancel"
+				onclick="#{rich:component('phonePanel')}.hide(); return false;" />
+		</h:panelGrid>
+	</h:form>
+</rich:modalPanel>
+
+<rich:modalPanel id="deletePhonePanel" autosized="true" width="200">
+	<f:facet name="header">
+		<h:outputText value="Delete phone permanently?"
+			style="padding-right:15px;" />
+	</f:facet>
+	<f:facet name="controls">
+		<h:panelGroup>
+			<h:graphicImage value="/images/led/cancel.png" styleClass="hidelink"
+				id="phoneHideLink2" />
+			<rich:componentControl for="deletePhonePanel" attachTo="phoneHideLink2"
+				operation="hide" event="onclick" />
+		</h:panelGroup>
+	</f:facet>
+	<h:form>
+		<table width="100%">
+			<tbody>
+				<tr>
+					<td align="center" width="50%"><a4j:commandButton value="Yes"
+						ajaxSingle="true" action="#{contactBackingBean.delete}"
+						oncomplete="#{rich:component('deletePhonePanel')}.hide();"
+						reRender="table" /></td>
+					<td align="center" width="50%"><a4j:commandButton
+						value="Cancel"
+						onclick="#{rich:component('deletePhonePanel')}.hide(); return false;" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</h:form>
+</rich:modalPanel>
+</html>

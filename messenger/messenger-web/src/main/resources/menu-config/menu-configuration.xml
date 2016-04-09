@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Menu roles="ROLE_ADMIN,ROLE_USER">
+	<Menu name="MainMenu" key="menu.mainMenu" url="homePage.html"
+		roles="ROLE_ADMIN,ROLE_USER">
+		<Menu name="HomePage" key="menu.homePage" url="homePage.html" />
+		<Menu name="Profile" key="menu.profile" url="editUser.html?profile=true" />
+		<Menu name="FileUpload" key="menu.uploadFile" url="uploadFile.html" />
+		<Menu name="Logout" key="menu.logout" url="logout.jsp" />
+	</Menu>
+
+	<Menu name="EditMenu" key="edit" url="listEmployees.html"
+		roles="ROLE_ADMIN,ROLE_USER">
+		<Menu name="PatientMenu" key="patients" url="listPatients.html" />
+		<Menu name="DepartmentMenu" key="departments" url="listDepartments.html" />
+		<Menu name="EmployeeMenu" key="employees" url="listEmployees.html" />
+		<Menu name="EmployeeGroupMenu" key="employeeGroups" url="listEmployeeGroups.html" />
+		<Menu name="AttachmentMenu" key="attachments" url="listAttachments.html" />
+		<Menu name="ExaminationMenu" key="examinations" url="listExaminations.html" />
+		<Menu name="ServiceTypeMenu" key="serviceTypes" url="listServiceTypes.html" />
+		<Menu name="WorkingTimeMenu" key="workingTimes" url="listWorkingTimes.html" />
+	</Menu>
+
+	<Menu name="AdminMenu" key="menu.admin" url="admin/listUsers.html"
+		roles="ROLE_ADMIN">
+		<Menu name="ViewUsers" key="users" url="admin/listUsers.html" />
+	</Menu>
+
+</Menu>

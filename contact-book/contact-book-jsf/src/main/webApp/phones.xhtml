@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+
+<h:panelGrid columns="2" columnClasses="leftClass,rightClass"
+	width="500">
+	<h:outputText value="Phones" />
+	<a4j:commandLink ajaxSingle="true" id="addPhonelink"
+		oncomplete="#{rich:component('phonePanel')}.show()"
+		action="#{contactBackingBean.addNewPhone}">
+		<h:graphicImage value="/images/add.png" />
+	</a4j:commandLink>
+</h:panelGrid>
+<rich:toolTip for="addPhonelink" value="Add" />
+
+<rich:dataTable value="#{contactBackingBean.contact.phones}" var="phone"
+	id="phonesTable" width="500">
+	
+	<rich:column>
+		<f:facet name="header">
+                        		Phone
+                			</f:facet>
+		<h:outputText value="#{phone.value}" />
+	</rich:column>
+	<rich:column width="100px">
+		<f:facet name="header">
+                        		Type
+                			</f:facet>
+		<h:outputText value="#{phone.type}" />
+	</rich:column>
+	<rich:column width="40">
+		<f:facet name="header">
+                        		Actions
+                			</f:facet>
+		<a4j:commandLink ajaxSingle="true" id="editPhonelink"
+			oncomplete="#{rich:component('phonePanel')}.show()">
+			<h:graphicImage value="/images/edit.png" />
+			<f:setPropertyActionListener value="#{rowPhone}"
+				target="#{contactBackingBean.currentRow}" />
+		</a4j:commandLink>
+		<rich:toolTip for="editPhonelink" value="Edit" />
+
+		<a4j:commandLink ajaxSingle="true" id="deletelink"
+			oncomplete="#{rich:component('deletePanel')}.show()">
+			<h:graphicImage value="/images/delete.png" />
+			<f:setPropertyActionListener value="#{rowPhone}"
+				target="#{contactBackingBean.currentRow}" />
+		</a4j:commandLink>
+		<rich:toolTip for="deletelink" value="Delete" />
+	</rich:column>
+</rich:dataTable>
+</html>

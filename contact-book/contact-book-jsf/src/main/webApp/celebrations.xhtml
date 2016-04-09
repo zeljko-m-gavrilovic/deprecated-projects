@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich">
+
+<h:panelGrid columns="2" columnClasses="leftClass,rightClass"
+	width="500">
+	<h:outputText value="Celebrations" />
+	<a4j:commandLink ajaxSingle="true" id="addCelebrationlink"
+		oncomplete="#{rich:component('celebrationPanel')}.show()"
+		action="#{contactBackingBean.addNewCelebration}">
+		<h:graphicImage value="/images/add.png" />
+	</a4j:commandLink>
+</h:panelGrid>
+<rich:toolTip for="addCelebrationlink" value="Add Celebration" />
+
+<rich:dataTable value="#{contactBackingBean.contact.emails}"
+	var="celebration" id="celebrationsTable" width="500">
+	<rich:column>
+		<f:facet name="header">
+                        		Celebration
+                			</f:facet>
+		<h:outputText value="#{celebration.value}" />
+	</rich:column>
+	<rich:column width="100px">
+		<f:facet name="header">
+                        		Type
+                			</f:facet>
+		<h:outputText value="#{celebration.type}" />
+	</rich:column>
+	<rich:column width="40">
+		<f:facet name="header">
+                        		Actions
+                			</f:facet>
+		<a4j:commandLink ajaxSingle="true" id="editCelebrationlink"
+			oncomplete="#{rich:component('celebrationPanel')}.show()">
+			<h:graphicImage value="/images/edit.png" />
+			<f:setPropertyActionListener value="#{rowCelebration}"
+				target="#{contactBackingBean.currentRow}" />
+		</a4j:commandLink>
+		<rich:toolTip for="editCelebrationlink" value="Edit" />
+
+		<a4j:commandLink ajaxSingle="true" id="deletelink"
+			oncomplete="#{rich:component('deletePanel')}.show()">
+			<h:graphicImage value="/images/delete.png" />
+			<f:setPropertyActionListener value="#{rowCelebration}"
+				target="#{contactBackingBean.currentRow}" />
+		</a4j:commandLink>
+		<rich:toolTip for="deletelink" value="Delete" />
+	</rich:column>
+</rich:dataTable>
+</html>

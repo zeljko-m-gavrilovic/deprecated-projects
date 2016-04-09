@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/saveItem"
+          android:icon="@android:drawable/ic_menu_save"
+          android:title="@string/save" />
+    <item android:id="@+id/exportItem"
+            android:icon="@drawable/export"
+            android:title="@string/exportOne" />
+    <item android:id="@+id/closeItem"
+          android:icon="@android:drawable/ic_menu_close_clear_cancel"
+          android:title="@string/close" />
+</menu>

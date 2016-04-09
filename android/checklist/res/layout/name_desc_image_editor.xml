@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"    
+    android:padding="6dip">
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dip"
+        android:text="@string/name"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:background="@android:drawable/editbox_background"
+        android:textSize="14dip"
+        android:layout_below="@id/nameLabel"/>
+   
+   <TextView
+        android:id="@+id/descriptionLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textSize="14dip"
+        android:layout_below="@id/name"/>
+        
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:lines="2"
+        android:background="@android:drawable/editbox_background"
+        android:textSize="14dip"
+        android:layout_below="@id/descriptionLabel"/>     
+    
+    <TextView
+        android:id="@+id/imageLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/image"
+        android:textSize="14dip"
+        android:layout_below="@id/description" />
+    
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:layout_below="@id/imageLabel" />
+                
+    <Button
+        android:id="@+id/closeItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemImage"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:text="@string/close" />
+    <Button
+        android:id="@+id/saveItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/closeItemButton"
+        android:layout_alignTop="@id/closeItemButton"
+        android:text="@string/save" />
+</RelativeLayout>
